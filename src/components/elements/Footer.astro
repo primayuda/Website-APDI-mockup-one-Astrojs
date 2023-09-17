@@ -3,13 +3,15 @@ import GroupFooterNav from "../blocks/GroupFooterNav.astro";
 import Container from "../shared/Container.astro";
 import FooterNav from "../shared/FooterNav.astro";
 import Paragraph from "../shared/Paragraph.astro";
+import logo from "../../images/logo-apdi.png"
+
 const footerNav1 = [
     {
         itemText:"Marketing",
         itemLink:"#"
     },
     {
-        itemText:"Analylitics",
+        itemText:"Event",
         itemLink:"#"
     },
     {
@@ -24,11 +26,7 @@ const footerNav1 = [
 
 const footerSupport = [
     {
-        itemText:"Pricing",
-        itemLink:"#"
-    },
-    {
-        itemText:"Guides",
+        itemText:"Dokumentasi",
         itemLink:"#"
     },
     {
@@ -36,14 +34,14 @@ const footerSupport = [
         itemLink:"#"
     },
     {
-        itemText:"Contact",
+        itemText:"Kontak",
         itemLink:"#"
     }
 ]
 
 const footerCompany = [
     {
-        itemText:"About",
+        itemText:"Tentang Kami",
         itemLink:"/about"
     },
     {
@@ -51,17 +49,13 @@ const footerCompany = [
         itemLink:"#"
     },
     {
-        itemText:"Jobs",
+        itemText:"Lowongan",
         itemLink:"#"
     },
     {
-        itemText:"Parteners",
+        itemText:"Partnership",
         itemLink:"#"
     },
-    {
-        itemText:"Jobs",
-        itemLink:"#"
-    }
 ]
 const footerLegal = [
     {
@@ -69,7 +63,7 @@ const footerLegal = [
         itemLink:"/#"
     },
     {
-        itemText:"Privacy",
+        itemText:"Perlindungan Data",
         itemLink:"#"
     },
     {
@@ -114,14 +108,15 @@ const footerLegal = [
             <div class="col-span-2 lg:col-span-1 h-auto flex flex-col">
                 <div class="h-full">
                     <a href="#" class="relative flex items-center gap-3">
-                        <div class="relative w-7 h-7 overflow-hidden flex rounded-xl">
+                        <!-- <div class="relative w-7 h-7 overflow-hidden flex rounded-xl">
                             <span class="absolute w-4 h-4 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
                             <span class="absolute w-4 h-4 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
                             <span class="absolute w-4 h-4 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
                             <span class="absolute w-2 h-2 rounded-full bg-heading-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
-                        </div>
+                        </div> -->
+                        <img src={logo} width="80" alt="Logo APDI" />
                         <div class="inline-flex text-lg font-semibold text-heading-1">
-                            AgenceX
+                            Pemimpin Digital Indonesia
                         </div>
                     </a>
                     <Paragraph className={"mt-8"}>
@@ -162,13 +157,13 @@ const footerLegal = [
             </div>
 
             <GroupFooterNav>
-                <FooterNav title={"Company"} navItems={footerCompany}/>
-                <FooterNav title={"Solutions"} navItems={footerNav1}/>
+                <FooterNav title={"Organisasi"} navItems={footerCompany}/>
+                <FooterNav title={"Solusi"} navItems={footerNav1}/>
             </GroupFooterNav>
 
             <GroupFooterNav>
                 <FooterNav title={"Support"} navItems={footerSupport}/>
-                <FooterNav title={"Ressources"} navItems={footerLegal}/>
+                <FooterNav title={"Informasi"} navItems={footerLegal}/>
             </GroupFooterNav>
 
         </div>
@@ -177,10 +172,10 @@ const footerLegal = [
         <Container>
             <div class="flex justify-between items-center gap-6 md:text-lg text-heading-3">
                 <div>
-                    &copy; <span id="year"></span> AgenceX. All right reserved
+                    &copy; <span id="year"></span> Asosiasi Pemimpin Digital Indonesia. All right reserved
                 </div>
                 <div>
-                    Proudly made by <a href="https://github.com/johnkat-mj" target="_blank" class="font-semibold">John Kat</a>
+                    Proudly made by <a href="https://primayuda.site/" target="_blank" class="font-semibold">Nakula Dev</a>
                 </div>
             </div>
         </Container>
