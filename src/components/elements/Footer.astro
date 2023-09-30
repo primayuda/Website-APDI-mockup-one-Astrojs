@@ -3,7 +3,7 @@ import GroupFooterNav from "../blocks/GroupFooterNav.astro";
 import Container from "../shared/Container.astro";
 import FooterNav from "../shared/FooterNav.astro";
 import Paragraph from "../shared/Paragraph.astro";
-import logo from "../../images/logo-apdi.png"
+import { Image } from "astro:assets";
 
 const footerNav1 = [
     {
@@ -110,7 +110,7 @@ const footerLegal = [
                             <span class="absolute w-4 h-4 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
                             <span class="absolute w-2 h-2 rounded-full bg-heading-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
                         </div> -->
-                        <img src={logo} width="80" alt="Logo APDI" />
+                        <Image src="https://res.cloudinary.com/primayuda/image/upload/v1695904095/APDI/apdi-icon_tudnhx.png" width="80" height="80" alt="Logo APDI" />
                         <div class="inline-flex text-lg font-semibold text-heading-1">
                             Pemimpin Digital Indonesia
                         </div>
