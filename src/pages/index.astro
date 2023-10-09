@@ -6,12 +6,16 @@ import AboutUs from '../components/sections/AboutUs.astro';
 import Features from '../components/sections/Features.astro';
 import CTA from '../components/sections/CTA.astro';
 import Brands from '../components/sections/Brands.astro';
+import CarouselCustomNavigation from '../components/carousel';
 ---
 
 <Layout title="Welcome to APDI">
 	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
 		<Hero/>
 		<Brands/>
+		<div class="flex mx-auto max-w-5xl">
+			<CarouselCustomNavigation client:load />
+		</div>
 		<AboutUs/>
 		<Features/>
 		<Services/>
