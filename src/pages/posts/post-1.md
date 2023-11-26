@@ -1,4 +1,8 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
+title: First Post
+author: Prima
+description: short use of Astro md
 
 ---
 
