@@ -9,7 +9,7 @@ export interface Props{
 
 const { className, image, date, title, content } = Astro.props
 ---
-<div class=`card w-96 bg-base-100 shadow-xl mt-10 dark:bg-neutral-400 ${className}`>
+<div class=`card w-96 bg-base-300 shadow-xl mt-10 dark:bg-slate-800 ${className}`>
     <figure><img src={image} alt="Shoes" /></figure>
     <div class="card-body">
         <p class="text-blue-800">{date}</p>
