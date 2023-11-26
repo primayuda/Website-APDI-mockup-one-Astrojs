@@ -6,14 +6,13 @@ import Title from "../shared/Title.astro";
 
 ---
 
-<section id="services">
-    <Container className="space-y-10 md:space-y-12">
+    <Container className="mt-20">
         <div class="text-center max-w-3xl mx-auto space-y-4">
             <Title>
-                Pengurus dan Pendiri
+                Anggota, Pengurus dan Pendiri
             </Title>
         </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             <Service title="Ketua Umum" description="Ignas Dwiatmana Sutapa" target="https://member-apdi.carrd.co">
                 <span slot="icon">
                     <img src={"/images/Ignas.png"} width="150" height="150" />
@@ -59,9 +58,11 @@ import Title from "../shared/Title.astro";
                     <img src={"/images/Agung.jpeg"} width="150" height="150" />
                 </span>
             </Service>
+            <Service title="Anggota" description="Robby Saputra" target="https://member-apdi.carrd.co/#robby">
+              <span slot="icon">
+                  <img src={"/images/Robby.png"} width="150" height="150" />
+              </span>
+          </Service>
         </div>
-        <div class="grid place-items-center">
-            <a role="button" class="btn btn-primary" href="/anggota">ANGGOTA LAINNYA</a>
-        </div>
+       
     </Container>
-</section>

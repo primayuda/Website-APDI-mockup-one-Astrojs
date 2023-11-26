@@ -1,0 +1,22 @@
+---
+export interface Props{
+    className?:string
+    image: string
+    date: string
+    title: string
+    content: string
+}
+
+const { className, image, date, title, content } = Astro.props
+---
+<div class=`card w-96 bg-base-100 shadow-xl mt-10 dark:bg-neutral-400 ${className}`>
+    <figure><img src={image} alt="Shoes" /></figure>
+    <div class="card-body">
+        <p class="text-blue-800">{date}</p>
+        <h2 class="card-title">{title}</h2>
+        <p class="line-clamp-2">{content}</p>
+        <div class="card-actions justify-end">
+        <button class="btn btn-link">Selengkapnya</button>
+        </div>
+</div>
+</div>

@@ -1,9 +1,16 @@
 ---
 import Container from "../shared/Container.astro";
+import Card from "../shared/Card.astro";
+import { data } from "./datas";
 ---
 
 <section class="relative mt-12 md:mt-16">
   <Container>
-    <h2>Blog List</h2>
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {data.map(item => 
+        <Card image={item.image} date={item.date} title={item.title} content={item.content} />
+      )}
+    </div>
+    
   </Container>
 </section>
